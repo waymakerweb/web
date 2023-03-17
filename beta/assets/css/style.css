@@ -181,7 +181,7 @@ p {
 }
 
 .sec-btn:hover {
-    background-color: #EE8159;
+    background-color: #d8734e;
     /* box-shadow: 0 10px 30px 0 rgb(255 215 186 / 72%); */
     transition: 0.3s;
 }
@@ -1030,7 +1030,7 @@ textarea.form-input {
 }
 
 .main-services p {
-    color: #8288a3;
+    color: #ffffff;
     padding-top: 10px;
     padding-bottom: 20px;
 }
