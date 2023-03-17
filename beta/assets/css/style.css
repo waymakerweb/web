@@ -115,7 +115,7 @@ p {
 
 .h1-title {
     font-family: 'poppins', serif;
-    font-size: 70px;
+    font-size: 80px;
     color: #ffffff;
     line-height: 90px;
     font-weight: 800;
@@ -991,7 +991,7 @@ textarea.form-input {
 
 /*==========Services Start==========*/
 .main-services {
-    background-color: #131830;
+    background-color: #3e4a5a;
     padding-top: 120px;
 }
 
@@ -1001,8 +1001,8 @@ textarea.form-input {
 }
 
 .main-service-box {
-    background-color: #0d1128;
-    border: solid 1px #0d1128;
+    background-color: #384351;
+    border: solid 1px #384351;
     border-radius: 8px;
     text-align: left;
     padding: 30px 30px 40px 30px;
@@ -1010,8 +1010,8 @@ textarea.form-input {
 }
 
 .main-service-box:hover {
-    border: solid 1px #F1B279;
-    box-shadow: 10px 26px 59px 0px rgba(0,0,0,0.51);
+    border: solid 1px #f08057;
+    box-shadow: 5px 10px 20px 0px rgba(0,0,0,0.51);
     transition: ease-in-out 0.3s;
 }
 
@@ -1022,7 +1022,7 @@ textarea.form-input {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 2px #F1B279;
+    border: solid 2px #f08057;
 }
 
 .main-services h3 {
@@ -1038,7 +1038,7 @@ textarea.form-input {
 .main-service-box a {
     padding: 15px 21px;
     border-radius: 50px;
-    background-color: #F1B279;
+    background-color: #f08057;
     text-align: center;
     color: #fff;
 }
@@ -1171,7 +1171,7 @@ textarea.form-input {
     position: absolute;
     width: 80px;
     height: 80px;
-    background-color: #F1B279;
+    background-color: #f08057;
     border-radius: 0px 80px 0px 0px;
     left: 0;
     bottom: 0;
@@ -1182,7 +1182,7 @@ textarea.form-input {
     position: absolute;
     width: 80px;
     height: 80px;
-    background-color: #F1B279;
+    background-color: #f08057;
     border-radius: 0px 0px 0px 80px;
     right: 0;
     top: 0;
