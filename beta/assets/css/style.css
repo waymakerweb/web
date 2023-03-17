@@ -115,7 +115,7 @@ p {
 
 .h1-title {
     font-family: 'poppins', serif;
-    font-size: 80px;
+    font-size: 70px;
     color: rgb(70, 78, 89);
     line-height: 90px;
     font-weight: 800;
@@ -164,14 +164,14 @@ p {
 }
 
 .sec-btn {
-    height: 60px;
+    height: 50px;
     display: inline-block;
     font-size: 15px;
     line-height: 24px;
     color: #fff !important;
     background-color: #F1B279;
     border-radius: 10px;
-    padding: 18px 32px;
+    padding: 15px 20px;
     font-weight: 500;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
@@ -689,7 +689,7 @@ textarea.form-input {
     font-size: 16px;
     line-height: 24px;
     display: inline-block;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     padding-left: 30px;
     position: relative;
 }
@@ -716,7 +716,7 @@ textarea.form-input {
 }
 
 .main-navigation ul li.sub-items:hover>a, .main-navigation ul li a:hover, .main-navigation ul li.active>a {
-    color: rgb(70, 78, 89);
+    color: #f08057;
 }
 
 .main-navigation ul li.sub-items>a:before {
@@ -807,12 +807,12 @@ textarea.form-input {
 }
 
 .main-navigation ul li ul.sub-menu li a:hover {
-    color: rgb(70, 78, 89);
+    color: #f08057;
     transition: 0.3s;
 }
 
 .site-header.sticky-header .main-navigation ul li.sub-items:hover>a, .site-header.sticky-header .main-navigation ul li a:hover, .site-header.sticky-header .main-navigation ul li.active>a, .site-header.sticky-header .main-navigation ul li.sub-items:hover>a:before, .site-header.sticky-header .main-navigation ul li a:hover:before, .site-header.sticky-header .main-navigation ul li.active>a:before, .site-header.sticky-header .main-navigation ul li ul.sub-menu li a:hover {
-    color: rgb(70, 78, 89);
+    color: #f08057;
 }
 
 /*==Sticky Header Start==*/
@@ -866,7 +866,7 @@ textarea.form-input {
 /*==========Banner Start==========*/
 .main-banner {
     position: relative;
-    padding: 312px 0px 170px 0px;
+    padding: 15% 0px 10% 0px;
 }
 
 .main-banner-slider {
@@ -886,7 +886,7 @@ textarea.form-input {
     width: 100%;
     height: 100%;
     /* background-color: rgb(08, 11, 27,0.75); */
-    background-color: rgb(171, 164, 207);
+    background-color: rgb(171, 164, 207,0.90);
     z-index: 1;
     pointer-events: none;
 }
@@ -897,13 +897,14 @@ textarea.form-input {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    /* background-image: url(../images/overlay-1.png); */
+    height: 110%;
+    background-image: url(../images/imagen-banner-fondo-2.png);
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
     z-index: 1;
     pointer-events: none;
+    /* opacity: 0.75; */
 }
 
 .banner-slider {
@@ -920,7 +921,7 @@ textarea.form-input {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     animation: zoom 8s linear infinite alternate;
 }
@@ -960,7 +961,8 @@ textarea.form-input {
 
 .banner-content p {
     color:rgb(255, 255, 255,0.60);
-    font-size: 18px;
+    font-size: 20px;
+    letter-spacing: 0.7px;
     line-height: 28px;
     margin-top: 15px;
     text-align: center;
@@ -972,8 +974,9 @@ textarea.form-input {
 .banner-content img {
     position: absolute;
     left: 50%;
-    top: 70%;
+    top: 80%;
     transform: translate(-50%,-50%);
+    width: 28%;
 }
 
 .banner-content a {
@@ -1336,7 +1339,7 @@ textarea.form-input {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-image: url(../images/overlay-2.png); */
+    background-image: url(../images/imagen-banner-fondo.png);
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
@@ -3593,7 +3596,7 @@ textarea.form-input {
     }
 
     .h1-title {
-        font-size: 70px;
+        font-size: 65px;
         line-height: 80px;
     }
 
