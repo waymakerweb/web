@@ -889,6 +889,7 @@ textarea.form-input {
     background-color: rgb(171, 164, 207,0.90);
     z-index: 1;
     pointer-events: none;
+    opacity: 0.80;
 }
 
 .main-banner:before {
