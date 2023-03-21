@@ -1140,11 +1140,11 @@ textarea.form-input {
 }
 
 .about-img-1 img {
-    max-width: 100%;
+    max-width: 100%!important;
 }
 
 .about-img-2 img {
-    max-width: 100%;
+    max-width: 100%!important;
 }
 
 .about-img .about-img-2 {
@@ -1165,6 +1165,8 @@ textarea.form-input {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100px;
+    width: 50%;
 }
 
 .about-point-content {
@@ -4059,7 +4061,8 @@ textarea.form-input {
     }
 
     .about-img-1 img {
-        width: 100%;
+        width: 100%!important;
+        height: auto!important;
     }
 
     .about-img-2 {
@@ -4286,10 +4289,24 @@ textarea.form-input {
     .main-contact-touch-in {
         padding-bottom: 80px;
     }
+
+    .about-content div{
+        display: flex;
+    justify-content: center;
+    }
     
 }
 
 @media screen and (max-width: 767px) {
+
+.container-service-icon{
+    display: flex;
+    justify-content: center;
+}
+
+.main-service-box h3{
+    text-align: center;
+}
 
     .h1-title {
         font-size: 50px;
