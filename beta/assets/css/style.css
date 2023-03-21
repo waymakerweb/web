@@ -1171,6 +1171,7 @@ textarea.form-input {
 
 .about-point-content {
     padding-left: 10px;
+    padding-right: 10px;
 }
 
 .about-point-content p {
@@ -1192,6 +1193,9 @@ textarea.form-input {
 /*==========Counter Start==========*/
 .main-counter {
     overflow: visible;
+}
+.counter-icon {
+    width: 90px;
 }
 
 .counter-bg {
@@ -1232,6 +1236,7 @@ textarea.form-input {
 .counter-text {
     text-align: left;
     margin-left: 15px;
+    width: 150px;
 }
 
 .counter-text h2 {
@@ -3763,6 +3768,10 @@ textarea.form-input {
         display: none !important;
     }
 
+    .main-about h2{
+text-align: center;
+    }
+
     .for-mob {
         display: inline-block !important;
     }
@@ -3816,7 +3825,7 @@ textarea.form-input {
         height: 100vh;
         max-height: 100vh;
         overflow: auto;
-        background: #131830;
+        background: #3e4a5a;
         text-align: center;
         padding: 100px 0 30px;
         box-shadow: -30px 0 30px rgba(0,0,0,0.1);
@@ -4455,6 +4464,10 @@ textarea.form-input {
 }
 
 @media screen and (max-width: 575px) {
+
+    .about-point-box{
+        height: 120px;
+    }
 
     .container {
         padding-left: 30px;
