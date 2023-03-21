@@ -980,6 +980,34 @@ textarea.form-input {
     width: 28%;
 }
 
+@media (min-width:520px) and (max-width:768px){
+    .banner-content img {
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%,-50%);
+        width: 40%;
+    }
+}
+
+@media(max-width:520px){
+    .banner-content img {
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        transform: translate(-50%,-50%);
+        width:70%;
+    }
+
+    .banner-content{
+        margin-top: 60px;
+    }
+
+    .main-banner:before {
+        background-image: none;
+    }
+}
+
 .banner-content a {
     margin-top: 20px;
 }
