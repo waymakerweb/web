@@ -1141,6 +1141,7 @@ textarea.form-input {
     align-items: center;
     justify-content: center;
     transition: all ease-in-out 0.3s;
+    height: 130px;
 }
 
 .partners-box:hover {
@@ -1234,7 +1235,7 @@ textarea.form-input {
     position: absolute;
     width: 80px;
     height: 80px;
-    background-color: #f08057;
+    background-color: #ada4cf;
     border-radius: 0px 80px 0px 0px;
     left: 0;
     bottom: 0;
@@ -1245,7 +1246,7 @@ textarea.form-input {
     position: absolute;
     width: 80px;
     height: 80px;
-    background-color: #f08057;
+    background-color: #ada4cf;
     border-radius: 0px 0px 0px 80px;
     right: 0;
     top: 0;
@@ -1626,6 +1627,7 @@ textarea.form-input {
     padding: 40px 40px 60px 40px;
     text-align: left;
     box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.11);
+    height: 450px;
 }
 
 .main-testimonial-box:before {
@@ -1640,6 +1642,10 @@ textarea.form-input {
 
 .main-testimonial-box p {
     margin-bottom: 0;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
 }
 
 .main-testimonial-box h3 {
@@ -1651,7 +1657,7 @@ textarea.form-input {
 .main-testimonial-box span {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    color: #F1B279;
+    color: #f3b278;
     text-transform: uppercase;
 }
 
@@ -1793,7 +1799,7 @@ textarea.form-input {
 
 /*==========Our Team Start==========*/
 .main-team {
-    padding-top: 108px;
+    padding-top: 60px;
     padding-bottom: 120px;
     text-align: center;
 }
@@ -2022,7 +2028,7 @@ textarea.form-input {
 
 /*==========Get In Touch Start==========*/
 .main-get-touch {
-    background-color: #f3f4f8;
+    background-color: #ada4cf30;
 }
 
 .main-get-touch .map-area {
@@ -2043,7 +2049,7 @@ textarea.form-input {
 /*==========Footer Start==========*/
 .main-footer {
     position: relative;
-    background-color: #131830;
+    background-color: #3e4a5a;
     padding-top: 120px;
     padding-bottom: 20px;
 }
@@ -2065,7 +2071,7 @@ textarea.form-input {
 }
 
 .logo-content p {
-    color: #a6adcb;
+    color: #ffffff;
     margin-bottom: 0;
     margin-top: 30px;
 }
@@ -2111,7 +2117,7 @@ textarea.form-input {
 .links-text ul li a {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    color: #a6adcb;
+    color: #ffffff;
     transition: 0.3s;
 }
 
@@ -2243,7 +2249,7 @@ textarea.form-input {
 }
 
 .copyright-bg {
-    background-color: #04081d;
+    background-color: #252c36;
     margin-top: 120px;
     padding-top: 20px;
     padding-bottom: 20px;
