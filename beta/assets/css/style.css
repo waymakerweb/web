@@ -2390,6 +2390,7 @@ textarea.form-input {
 
 .main-services-in h3 {
     color: #fff;
+    height: 100px;
 }
 
 .main-services-in p {
@@ -2507,7 +2508,7 @@ textarea.form-input {
 /*==========Service Detail Page Start==========*/
 /*===Service detail Content Start===*/
 .main-service-detail {
-    padding-top: 120px;
+    padding-top: 60px;
     padding-bottom: 100px;
 }
 
@@ -2526,6 +2527,7 @@ textarea.form-input {
     font-weight: 700;
     padding-bottom: 0;
     position: relative;
+    margin-top: -20px;
 }
 
 .service-detail-box h2:before {
@@ -4671,3 +4673,8 @@ textarea.form-input {
 }
 
 /*==========Responsive End==========*/
+
+#textContainer {
+    font-size: 70px;
+    font-weight: 700;
+}
