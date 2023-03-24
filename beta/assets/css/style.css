@@ -4678,3 +4678,7 @@ textarea.form-input {
     font-size: 70px;
     font-weight: 700;
 }
+
+#jarallax-container-0 div {
+    height: 100% !important;
+}
