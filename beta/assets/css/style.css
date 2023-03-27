@@ -1625,33 +1625,33 @@ textarea.form-input {
 .main-testimonial-box {
     position: relative;
     background-color: #fff;
-    padding: 40px 40px 60px 40px;
+    padding: 25px;
     text-align: left;
     box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.11);
-    height: 450px;
+    height: 350px;
 }
 
 .main-testimonial-box:before {
     content: "";
     position: absolute;
-    width: 91px;
-    height: 71px;
-    background-image: url(../images/quote.png);
-    bottom: 30px;
+    width: 60px;
+    height: 47px;
+    background-image: url(../images/quote-orange.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 20px;
     right: 30px;
+    opacity: 0.7;
 }
 
 .main-testimonial-box p {
     margin-bottom: 0;
-    height: 250px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center
+
 }
 
 .main-testimonial-box h3 {
     font-size: 20px;
-    padding-top: 20px;
+
     margin-bottom: 0;
 }
 
@@ -1663,8 +1663,13 @@ textarea.form-input {
 }
 
 .clinet-img {
-    margin-top: 25px;
     position: absolute;
+    bottom: -30px;
+}
+
+.img-rounded-circle {
+    width: 70px;
+    margin-top: 30px;
 }
 
 .main-testimonial-slider .slick-list {
