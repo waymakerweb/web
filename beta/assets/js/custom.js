@@ -71,10 +71,10 @@ $(document).ready(function ($) {
 	// Toogle Menu Mobile JS End
 
 	// Scroll To Top JS Start
-	$('#scroll-to-top').on('click', function () {
-		$("html, body").animate({ scrollTop: 0 }, 800);
-		return false;
-	});
+	// $('#scroll-to-top').on('click', function () {
+	// 	$("html, body").animate({ scrollTop: 0 }, 800);
+	// 	return false;
+	// });
 	$(window).on('scroll', function () {
 		if ($(window).scrollTop() > 300) {
 			$("#scroll-to-top").fadeIn(500);
