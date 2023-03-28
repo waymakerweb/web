@@ -1685,13 +1685,13 @@ textarea.form-input {
 .main-testimonial-slider .slick-slide {
     opacity: 0;
     pointer-events: none;
-    transition: 0.3s;
+
 }
 
 .main-testimonial-slider .slick-slide.slick-active {
     opacity: 1;
     pointer-events: unset;
-    transition: all ease-in-out 0.3s;
+
 }
 
 /*==========Testimonial End==========*/
@@ -3611,10 +3611,10 @@ textarea.form-input {
 /*==========Scroll To Top CSS Start==========*/
 .scroll-top {
     position: fixed;
-    bottom: 50px;
-    right: 60px;
-    width: 50px;
-    height: 50px;
+    bottom: 45px;
+    right: 45px;
+    width: 65px;
+    height: 65px;
     background-color: #00bb2d;
     font-size: 25px;
     color: #ffffff;
@@ -3623,6 +3623,7 @@ textarea.form-input {
     transition: 0.3s;
     overflow: hidden;
     z-index: 50;
+    font-size: 40px;
 
 }
 

@@ -167,8 +167,9 @@ $(document).ready(function ($) {
 		nextArrow: '<button class="slick-arrow next-arrow color-arrow"><i class="fa fa-chevron-right"></i></button>',
 		arrows: true,
 		dots: false,
+		speed:0,
+		centerMode: true,
 		autoplay: true,
-		autoplaySpeed: 2000,
 		responsive: [
 			{
 				breakpoint: 1200,
@@ -216,24 +217,28 @@ $(document).ready(function ($) {
 				breakpoint: 1200,
 				settings: {
 					slidesToShow: 3,
+					slidesToScroll: 1,
 				}
 			},
 			{
 				breakpoint: 992,
 				settings: {
 					slidesToShow: 2,
+					slidesToScroll: 1,
 				}
 			},
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 1
+					slidesToShow: 1,
+					slidesToScroll: 1,
 				}
 			},
 			{
 				breakpoint: 376,
 				settings: {
-					slidesToShow: 1
+					slidesToShow: 1,
+					slidesToScroll: 1,
 				}
 			}
 		]
