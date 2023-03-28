@@ -3660,6 +3660,25 @@ textarea.form-input {
     animation: swipe 0.6s linear infinite alternate;
 }
 
+.scroll-top {
+
+    /* Añade más estilos para el botón según tus preferencias */
+    animation: bounce 61s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    98.36%,
+    100% {
+        transform: translateY(0);
+    }
+
+    98.85% {
+        transform: translateY(-20px);
+    }
+}
+
 @keyframes swipe {
     from {
         margin-top: -3px;
