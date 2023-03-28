@@ -167,7 +167,7 @@ $(document).ready(function ($) {
 		nextArrow: '<button class="slick-arrow next-arrow color-arrow"><i class="fa fa-chevron-right"></i></button>',
 		arrows: true,
 		dots: false,
-		speed:0,
+		speed:500,
 		centerMode: true,
 		autoplay: true,
 		responsive: [
