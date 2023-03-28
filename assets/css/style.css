@@ -4428,6 +4428,7 @@ textarea.form-input {
 
     .main-service-box h3 {
         text-align: center;
+        justify-content: center;
     }
 
     .main-service-box p {
