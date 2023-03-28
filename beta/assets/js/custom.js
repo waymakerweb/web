@@ -85,22 +85,22 @@ $(document).ready(function ($) {
 	// Scroll To Top JS End
 
 	// Banner Slider JS Start
-	$('.banner-slider').slick({
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		prevArrow: '<button class="slick-arrow prev-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i></i></button>',
-		nextArrow: '<button class="slick-arrow next-arrow"><i class="fa fa-arrow-right" aria-hidden="true"></i></i></button>',
-		arrows: false,
-		dots: false,
-		autoplay: true,
-		autoplaySpeed: 5000,
-		speed: 1000,
-		fade: true,
-		cssEase: 'linear',
-		lazyLoad: 'progressive',
-		asNavFor: '.banner-content-slider',
-	});
+	// $('.banner-slider').slick({
+	// 	infinite: true,
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	prevArrow: '<button class="slick-arrow prev-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i></i></button>',
+	// 	nextArrow: '<button class="slick-arrow next-arrow"><i class="fa fa-arrow-right" aria-hidden="true"></i></i></button>',
+	// 	arrows: false,
+	// 	dots: false,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 5000,
+	// 	speed: 1000,
+	// 	fade: true,
+	// 	cssEase: 'linear',
+	// 	lazyLoad: 'progressive',
+	// 	asNavFor: '.banner-content-slider',
+	// });
 	// Banner Slider JS End
 
 	// Banner Content Slider JS Start
