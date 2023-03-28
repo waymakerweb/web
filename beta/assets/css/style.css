@@ -85,6 +85,7 @@ a:hover,
 a:focus {
     text-decoration: none;
     outline: none;
+    color: inherit;
 }
 
 input,
@@ -3398,7 +3399,7 @@ textarea.form-input {
 .blog-point-box ul li span {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    font-weight: 500;
+
 }
 
 .blog-detail-info-img {
@@ -3523,7 +3524,7 @@ textarea.form-input {
 /*==========Contact Us Page Start==========*/
 /*===We Are Here Start===*/
 .main-we-are-here-in {
-    padding-top: 120px;
+    padding-top: 10px;
     padding-bottom: 120px;
 }
 
@@ -3547,7 +3548,7 @@ textarea.form-input {
 
 .contact-help-box:hover {
     border: solid 1px #F1B279;
-    background-color: #0d1128;
+
     box-shadow: 10px 26px 59px 0px rgba(0, 0, 0, 0.51);
     transition: 0.3s;
 }
@@ -3572,7 +3573,7 @@ textarea.form-input {
 }
 
 .contact-help-box:hover .contact-help-content h3 {
-    color: #ffffff;
+
     transition: 0.3s;
 }
 
@@ -3582,7 +3583,7 @@ textarea.form-input {
 }
 
 .contact-help-box:hover .contact-help-content p {
-    color: #ffffff;
+
     transition: 0.3s;
 }
 
@@ -3591,6 +3592,7 @@ textarea.form-input {
 /*===Contact Us Get In Touch Start===*/
 .main-contact-touch-in {
     padding-bottom: 120px;
+    padding-top: 120px;
 }
 
 .contact-touch-map iframe {
@@ -4769,7 +4771,7 @@ textarea.form-input {
     position: absolute;
     width: 45px;
     height: 47px;
-    background-image: url(../images/quote-orange.png);
+    background-image: url(../images/quote-yellow.png);
     background-repeat: no-repeat;
     background-size: contain;
     bottom: 10px;
@@ -4782,7 +4784,7 @@ textarea.form-input {
     position: absolute;
     width: 45px;
     height: 37px;
-    background-image: url(../images/quote-orange.png);
+    background-image: url(../images/quote-yellow.png);
     background-repeat: no-repeat;
     background-size: contain;
     top: 10px;
