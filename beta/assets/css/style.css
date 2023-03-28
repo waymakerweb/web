@@ -1076,6 +1076,8 @@ textarea.form-input {
     color: #fff;
     height: 100px;
     font-size: 23px;
+    display: flex;
+    align-items: center;
 }
 
 .main-services p {
@@ -2186,6 +2188,8 @@ textarea.form-input {
 .contact-text {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 9999;
 }
 
 .contact-text p {
@@ -3605,8 +3609,8 @@ textarea.form-input {
 /*==========Scroll To Top CSS Start==========*/
 .scroll-top {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 50px;
+    right: 60px;
     width: 50px;
     height: 50px;
     background-color: #00bb2d;
@@ -3617,7 +3621,7 @@ textarea.form-input {
     transition: 0.3s;
     overflow: hidden;
     z-index: 50;
-    display: none;
+
 }
 
 .scroll-top:hover {
@@ -4691,3 +4695,30 @@ textarea.form-input {
 #jarallax-container-0 div {
     height: 100% !important;
 }
+/* 
+.background-image-about:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.90);
+} */
+
+/* .background-image-about-1 {
+    position: relative;
+    background-image: url('/beta/assets/images/imagen-redonda-nosotros.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.background-image-about-2 {
+    position: relative;
+    background-image: url('/beta/assets/images/gente-negocios-dandose-mano-modified.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+} */

@@ -75,13 +75,13 @@ $(document).ready(function ($) {
 	// 	$("html, body").animate({ scrollTop: 0 }, 800);
 	// 	return false;
 	// });
-	$(window).on('scroll', function () {
-		if ($(window).scrollTop() > 300) {
-			$("#scroll-to-top").fadeIn(500);
-		} else {
-			$("#scroll-to-top").fadeOut(500);
-		}
-	});
+	// $(window).on('scroll', function () {
+	// 	if ($(window).scrollTop() > 300) {
+	// 		$("#scroll-to-top").fadeIn(500);
+	// 	} else {
+	// 		$("#scroll-to-top").fadeOut(500);
+	// 	}
+	// });
 	// Scroll To Top JS End
 
 	// Banner Slider JS Start
