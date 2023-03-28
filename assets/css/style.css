@@ -4846,7 +4846,7 @@ textarea.form-input {
 
 @media (max-width:425px) {
     .main-testimonial-box {
-        height: 550px;
+        width: 550px;
         height: 100%;
     }
 }
