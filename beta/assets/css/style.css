@@ -4709,8 +4709,7 @@ textarea.form-input {
 /*==========Responsive End==========*/
 
 #textContainer {
-    font-size: 70px;
-    font-weight: 700;
+   hyphens: auto;
 }
 
 #jarallax-container-0 div {
@@ -4730,11 +4729,11 @@ textarea.form-input {
 .contenido-oculto-naranja:before {
     content: "";
     position: absolute;
-    width: 45px;
-    height: 37px;
+    width: 25px;
+    height: 27px;
     background-image: url(../images/quote-yellow.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     bottom: 10px;
     right: 30px;
     opacity: 0.7;
@@ -4743,8 +4742,8 @@ textarea.form-input {
 .contenido-oculto-naranja::after {
     content: "";
     position: absolute;
-    width: 45px;
-    height: 37px;
+    width: 25px;
+    height: 27px;
     background-image: url(../images/quote-yellow.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -4759,11 +4758,11 @@ textarea.form-input {
 .contenido-oculto-amarillo-claro:before {
     content: "";
     position: absolute;
-    width: 45px;
-    height: 37px;
+    width: 25px;
+    height: 27px;
     background-image: url(../images/quote.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     bottom: 10px;
     right: 30px;
     opacity: 0.7;
@@ -4772,8 +4771,8 @@ textarea.form-input {
 .contenido-oculto-amarillo-claro::after {
     content: "";
     position: absolute;
-    width: 45px;
-    height: 37px;
+    width: 25px;
+    height: 27px;
     background-image: url(../images/quote.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -4788,21 +4787,21 @@ textarea.form-input {
 .contenido-oculto-lila:before {
     content: "";
     position: absolute;
-    width: 45px;
-    height: 47px;
+    width: 25px;
+    height: 27px;
     background-image: url(../images/quote-yellow.png);
     background-repeat: no-repeat;
     background-size: contain;
     bottom: 10px;
-    right: 37px;
+    right: 30px;
     opacity: 0.7;
 }
 
 .contenido-oculto-lila::after {
     content: "";
     position: absolute;
-    width: 45px;
-    height: 37px;
+    width: 25px;
+    height: 27px;
     background-image: url(../images/quote-yellow.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -4817,8 +4816,8 @@ textarea.form-input {
 .contenido-oculto-amarillo-oscuro:before {
     content: "";
     position: absolute;
-    width: 45px;
-    height: 37px;
+    width: 25px;
+    height: 27px;
     background-image: url(../images/quote.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -4832,8 +4831,8 @@ textarea.form-input {
 .contenido-oculto-amarillo-oscuro::after {
     content: "";
     position: absolute;
-    width: 45px;
-    height: 37px;
+    width: 25px;
+    height: 27px;
     background-image: url(../images/quote.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -4842,6 +4841,46 @@ textarea.form-input {
     opacity: 0.7;
     transform: rotate(180deg);
 
+}
+
+@media (max-width:425px) {
+    .main-testimonial-box {
+        height: 410px;
+    }
+}
+
+@media (max-width:992px) {
+    .box-button-form {
+        text-align: center;
+    }
+
+    .contenedor-detale-nosotros {
+        width: 100% !important;
+    }
+
+    .boton-contacto {
+        display: block !important;
+    }
+
+    .background-image-about-2 {
+        width: 100%;
+        order: -1;
+        text-align: center;
+    }
+
+    .background-image-about-2 img {
+        width: 50%!important;
+
+    }
+
+    .imagen-empresas{
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagen-empresas img{
+        width: 50%!important;
+    }
 }
 
 /* 
