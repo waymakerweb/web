@@ -2403,7 +2403,7 @@ textarea.form-input {
 
 .main-services-in h3 {
     color: #fff;
-    height: 100px;
+    height: 120px;
 }
 
 .main-services-in p {
@@ -4709,7 +4709,7 @@ textarea.form-input {
 /*==========Responsive End==========*/
 
 #textContainer {
-   hyphens: auto;
+    hyphens: auto;
 }
 
 #jarallax-container-0 div {
@@ -4869,18 +4869,27 @@ textarea.form-input {
     }
 
     .background-image-about-2 img {
-        width: 50%!important;
+        width: 50% !important;
 
     }
 
-    .imagen-empresas{
+    .imagen-empresas {
         width: 100%;
         text-align: center;
     }
 
-    .imagen-empresas img{
-        width: 50%!important;
+    .imagen-empresas img {
+        width: 50% !important;
     }
+}
+
+.scroll::-webkit-scrollbar {
+    width: 8px;
+    /* Tamaño del scroll en vertical */
+    height: 8px;
+    /* Tamaño del scroll en horizontal */
+    display: none;
+    /* Ocultar scroll */
 }
 
 /* 
