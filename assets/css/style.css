@@ -4428,7 +4428,7 @@ textarea.form-input {
 
     .main-service-box h3 {
         text-align: center;
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .main-service-box p {
@@ -4847,7 +4847,7 @@ textarea.form-input {
 
 @media (max-width:425px) {
     .main-testimonial-box {
-        height: 550px;
+        height: 550px !important;
         width: 100%;
     }
 }
