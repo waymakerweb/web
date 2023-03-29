@@ -371,6 +371,9 @@ $(document).ready(function ($) {
 	});
 	// Blog List Slider JS End
 
+	const yearElement = document.getElementById("currentYear");
+	const currentYear = new Date().getFullYear();
+	yearElement.textContent = currentYear;
 
 
 });

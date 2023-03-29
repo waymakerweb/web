@@ -925,7 +925,7 @@
                 <div class="row copyright-bg">
                     <div class="col-xl-6 col-lg-6 col-md-7">
                         <div class="copyright-content container-service-icon">
-                            <p>Copyright &copy; 2023 <a href="https://Waymaker.com.co">Way Maker</a> Todos los derechos
+                            <p>Copyright &copy; <span id="currentYear"></span> <a href="https://Waymaker.com.co">Way Maker</a> Todos los derechos
                                 reservados.
                             </p>
                         </div>
@@ -980,9 +980,14 @@
 
 </body>
 <script>
+//año copyrigth
+
+
     // Inicializa EmailJS
     emailjs.init("zBiZfIIYalEJYvhRN");
 
+
+    
     $(function () {
         $('.main-testimonial-slider').slick({
             // Opciones habituales de Slick
