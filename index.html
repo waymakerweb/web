@@ -1039,12 +1039,6 @@
 <script>
     //año copyrigth
 
-
-    // Inicializa EmailJS
-    emailjs.init("zBiZfIIYalEJYvhRN");
-
-
-
     $(function () {
         $('.main-testimonial-slider').slick({
             // Opciones habituales de Slick
@@ -1057,41 +1051,51 @@
             }
         });
     });
-    $(document).ready(function () {
-        $("#email-form-index").on("submit", function (event) {
-            event.preventDefault();
+// Inicialización de EmailJS con la llave pública correcta
+emailjs.init("infrjFJIjGvfdtY_D");
 
-            const name = $("#name").val();
-            const email = $("#email").val();
-            const number = $("#number").val();
-            const message = $("#message").val();
+$(document).ready(function () {
+    $("#email-form").on("submit", function (event) {
+        event.preventDefault();
 
-            // Parámetros para la plantilla de correo electrónico
-            const templateParams = {
-                name: name,
-                email: email,
-                number: number,
-                message: message,
+        const name = $("#name").val();
+        const email = $("#email").val();
+        const number = $("#number").val();
+        const message = $("#message").val();
 
-            };
-            console.log(templateParams)
-            // Enviar correo electrónico usando EmailJS
-            emailjs.send("contacto_waymaker", "template_6nz60pb", templateParams)
-                .then(function (response) {
-                    $("#email-form-index").hide();
-                    $("#mensaje_contacto_index_exito").show();
+        // Verificar que todos los campos tengan valores
+        if (!name || !email || !number || !message) {
+            alert("Por favor, completa todos los campos del formulario.");
+            return;
+        }
 
-                }, function (error) {
-                    alert("Error al enviar el correo electrónico.");
-                });
-        });
+        // Parámetros para la plantilla de correo electrónico
+        const templateParams = {
+            name: name,
+            email: email,
+            number: number,
+            message: message,
+        };
 
+        console.log("Parámetros de la plantilla:", templateParams);
 
+        // Enviar correo electrónico usando EmailJS
+        // paramatemtros --> Id (Email services), Id (Plantilla), Parametros (Variables del correo)
+        emailjs.send("service_mq73l23", "template_owi96hf", templateParams)
+            .then(function (response) {
+                console.log("Correo electrónico enviado con éxito:", response);
+                $("#email-form").hide();
+                $("#mensaje_contacto_exito").show();
 
-
-
+                //Enviamos un mensaje de respuesta al usuario que llena el formulario
+                emailjs.send("service_mq73l23", "template_ch9zb5h", templateParams)
+                
+            }, function (error) {
+                console.error("Error al enviar el correo electrónico:", error);
+                alert("Error al enviar el correo electrónico: " + JSON.stringify(error));
+            });
     });
-
+});
 
 </script>
 

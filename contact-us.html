@@ -404,38 +404,51 @@
 </body>
 
 <script>
-    // Inicializa EmailJS
-    emailjs.init("zBiZfIIYalEJYvhRN");
+// Inicialización de EmailJS con la llave pública correcta
+emailjs.init("infrjFJIjGvfdtY_D");
 
-    $(document).ready(function () {
-        $("#email-form").on("submit", function (event) {
-            event.preventDefault();
+$(document).ready(function () {
+    $("#email-form").on("submit", function (event) {
+        event.preventDefault();
 
-            const name = $("#name").val();
-            const email = $("#email").val();
-            const number = $("#number").val();
-            const message = $("#message").val();
+        const name = $("#name").val();
+        const email = $("#email").val();
+        const number = $("#number").val();
+        const message = $("#message").val();
 
-            // Parámetros para la plantilla de correo electrónico
-            const templateParams = {
-                name: name,
-                email: email,
-                number: number,
-                message: message,
+        // Verificar que todos los campos tengan valores
+        if (!name || !email || !number || !message) {
+            alert("Por favor, completa todos los campos del formulario.");
+            return;
+        }
 
-            };
-            console.log(templateParams)
-            // Enviar correo electrónico usando EmailJS
-            emailjs.send("contacto_waymaker", "template_6nz60pb", templateParams)
-                .then(function (response) {
-                    $("#email-form").hide();
-                    $("#mensaje_contacto_exito").show();
+        // Parámetros para la plantilla de correo electrónico
+        const templateParams = {
+            name: name,
+            email: email,
+            number: number,
+            message: message,
+        };
 
-                }, function (error) {
-                    alert("Error al enviar el correo electrónico.");
-                });
-        });
+        console.log("Parámetros de la plantilla:", templateParams);
+
+        // Enviar correo electrónico usando EmailJS con el ID de servicio correcto
+        emailjs.send("service_mq73l23", "template_owi96hf", templateParams)
+            .then(function (response) {
+                console.log("Correo electrónico enviado con éxito:", response);
+                $("#email-form").hide();
+                $("#mensaje_contacto_exito").show();
+                
+                //Enviamos un mensaje de respuesta al usuario que llena el formulario
+                emailjs.send("service_mq73l23", "template_ch9zb5h", templateParams)
+                
+            }, function (error) {
+                console.error("Error al enviar el correo electrónico:", error);
+                alert("Error al enviar el correo electrónico: " + JSON.stringify(error));
+            });
     });
+});
+
 </script>
 
 </html>
