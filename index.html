@@ -1055,7 +1055,7 @@
 emailjs.init("infrjFJIjGvfdtY_D");
 
 $(document).ready(function () {
-    $("#email-form").on("submit", function (event) {
+    $("#email-form-index").on("submit", function (event) {
         event.preventDefault();
 
         const name = $("#name").val();
@@ -1084,8 +1084,8 @@ $(document).ready(function () {
         emailjs.send("service_mq73l23", "template_owi96hf", templateParams)
             .then(function (response) {
                 console.log("Correo electrónico enviado con éxito:", response);
-                $("#email-form").hide();
-                $("#mensaje_contacto_exito").show();
+                $("#email-form-index").hide();
+                $("#mensaje_contacto_index_exito").show();
 
                 //Enviamos un mensaje de respuesta al usuario que llena el formulario
                 emailjs.send("service_mq73l23", "template_ch9zb5h", templateParams)
