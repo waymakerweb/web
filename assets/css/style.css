@@ -4895,6 +4895,48 @@ textarea.form-input {
     /* Ocultar scroll */
 }
 
+
+
+
+
+#servicios>li>ul{
+    display: none;
+    position: absolute;
+    width: max-content;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 30px;
+    padding: 10px;
+    background: #ffffff69;
+    box-shadow: 6px 6px 6px 0px rgb(155 155 155 / 29%);
+    border-radius: 8px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+#servicios>li>ul::before{
+    content: "";
+    position: absolute;
+    width: max-content;
+    transform: translateX(50%);
+    right: 50%;
+    top: -12px;
+    padding: 10px;
+    background: #ffffff69;
+    width: 60%;
+    opacity: 0;
+}
+#servicios>li:hover>ul {
+display:flex;
+}
+
+.menu-lista{
+    position: relative;
+    margin-left: 30px;
+    padding-left:0px !important;
+}
+
 /* 
 .background-image-about:before {
     content: '';
