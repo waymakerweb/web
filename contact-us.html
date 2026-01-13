@@ -444,7 +444,7 @@ $(document).ready(function () {
         console.log("Parámetros de la plantilla:", templateParams);
 
         // Enviar correo electrónico usando EmailJS con el ID de servicio correcto
-        emailjs.send("service_mq73l23", "template_owi96hf", templateParams)
+        emailjs.send("waymaker", "template_owi96hf", templateParams)
             .then(function (response) {
                 console.log("Correo electrónico enviado con éxito:", response);
                 $("#email-form").hide();
