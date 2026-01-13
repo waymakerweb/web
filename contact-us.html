@@ -415,51 +415,61 @@
 </body>
 
 <script>
-// Inicialización de EmailJS con la llave pública correcta
-emailjs.init("infrjFJIjGvfdtY_D");
+  // Inicialización de EmailJS con la llave pública
+  emailjs.init("infrjFJIjGvfdtY_D");
 
-$(document).ready(function () {
+  $(document).ready(function () {
     $("#email-form").on("submit", function (event) {
-        event.preventDefault();
+      event.preventDefault();
 
-        const name = $("#name").val();
-        const email = $("#email").val();
-        const number = $("#number").val();
-        const message = $("#message").val();
+      // 1) Captura de campos
+      const name = $("#name").val().trim();
+      const email = $("#email").val().trim();
+      const number = $("#number").val().trim();
+      const message = $("#message").val().trim();
 
-        // Verificar que todos los campos tengan valores
-        if (!name || !email || !number || !message) {
-            alert("Por favor, completa todos los campos del formulario.");
-            return;
-        }
+      // 2) Validación básica
+      if (!name || !email || !number || !message) {
+        alert("Por favor, completa todos los campos del formulario.");
+        return;
+      }
 
-        // Parámetros para la plantilla de correo electrónico
-        const templateParams = {
-            name: name,
-            email: email,
-            number: number,
-            message: message,
-        };
+      // 3) Parámetros para las plantillas
+      const templateParams = { name, email, number, message };
+      console.log("Parámetros de la plantilla:", templateParams);
 
-        console.log("Parámetros de la plantilla:", templateParams);
+      // (Opcional) Deshabilitar botón para evitar doble envío
+      const $btn = $("#email-form button[type='submit']");
+      const oldBtnText = $btn.text();
+      $btn.prop("disabled", true).text("Enviando...");
 
-        // Enviar correo electrónico usando EmailJS con el ID de servicio correcto
-        emailjs.send("waymaker", "template_owi96hf", templateParams)
-            .then(function (response) {
-                console.log("Correo electrónico enviado con éxito:", response);
-                $("#email-form").hide();
-                $("#mensaje_contacto_exito").show();
-                
-                //Enviamos un mensaje de respuesta al usuario que llena el formulario
-                emailjs.send("service_mq73l23", "template_ch9zb5h", templateParams)
-                
-            }, function (error) {
-                console.error("Error al enviar el correo electrónico:", error);
-                alert("Error al enviar el correo electrónico: " + JSON.stringify(error));
-            });
+      // 4) Enviar correo interno y luego auto-respuesta (encadenado)
+      emailjs
+        .send("waymaker", "template_owi96hf", templateParams) // correo a tu equipo
+        .then(function (response1) {
+          console.log("Correo interno enviado con éxito:", response1);
+
+          // Enviar auto-respuesta al usuario (IMPORTANTE: return para encadenar)
+          return emailjs.send("waymaker", "template_ch9zb5h", templateParams);
+        })
+        .then(function (response2) {
+          console.log("Auto-respuesta enviada con éxito:", response2);
+
+          // Mostrar éxito solo cuando ambos envíos terminen OK
+          $("#email-form").hide();
+          $("#mensaje_contacto_exito").show();
+        })
+        .catch(function (error) {
+          console.error("Error enviando correos:", error);
+          alert("Error al enviar el correo: " + JSON.stringify(error));
+        })
+        .finally(function () {
+          // Rehabilitar botón (si quieres permitir reenviar)
+          $btn.prop("disabled", false).text(oldBtnText);
+        });
     });
-});
-
+  });
 </script>
+
 
 </html>
